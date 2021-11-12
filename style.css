@@ -1,0 +1,148 @@
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(211, 211, 211);
+}
+.conteiner{
+    width: 800px;
+    height: 650px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 200px;
+    z-index: 2;
+}
+.main-right{
+    width: 400px;
+    height: 600px;
+    background-color: rgba(65, 170, 121, 0.76);
+    position: relative;
+    top: -620px;
+    right: -400px;
+}
+.main-left{
+    width: 399px;
+    height: 600px;
+    background-color: #fff;
+}
+.start{
+    margin: 30px;
+    text-align: center;
+    position: relative;
+    top: 20px;
+    color: rgb(112, 112, 112);
+}
+.f-t-in{
+    width: 300px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    left: 30px;
+}
+.i-fa{
+    border: 1px solid rgb(112, 112, 112);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+a{
+    text-decoration: none;
+    color: rgb(112, 112, 112);
+}
+a:hover{
+    background-color:rgb(112, 112, 112) ;
+}
+input{
+    margin: 10px ;
+    width: 300px;
+    height: 50px;
+    border: 1px solid rgb(221, 221, 221);
+    color: rgb(78, 78, 78);
+    background-color: rgb(204, 200, 200);
+}
+.email{
+    position: relative;
+    left: 35px;
+}
+.phone{
+    position: relative;
+    left: 35px;
+}
+textarea{
+    margin: 10px ;
+    width: 300px;
+    height: 50px;
+    position: relative;
+    left: 35px;
+}
+p{
+    color: rgb(112, 112, 112); 
+    text-align: center;
+}
+button{
+    background-color: rgb(68, 173, 124);
+    width: 300px;
+    height: 50px;
+    color: white;
+    border-radius: 50px;
+    position: relative;
+    left: 35px;
+}
+.right{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: relative;
+    top: 190px;
+}
+.btm{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius:50px;
+    position: relative;
+    top: 250px;
+    left:130px;
+}
+i{
+    color: white;
+    font-size: 30px;
+}
+.right-p{
+    color: white;
+    font-size: 17px;
+    position: relative;
+    top: 200px;
+}
+.background1{
+    width: 190px;
+    height: 190px;
+    background-color: tomato;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    clip-path: polygon(50% 0%, 100% 91%, 100% 100%, 0 100%, 0 91%);
+    position: relative;
+    top: -700px;
+    left: 1060px;
+    z-index: 1;
+}
+.background2{
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    background-color: rgb(187, 187, 0);
+    position: relative;
+    bottom: 290px;
+    right: 50px;
+}
+

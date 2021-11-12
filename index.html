@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_zmFFw9nkYr5REHbnai701');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_odjiutl', 'template_m1erhms', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div class="conteiner">
+            <div class="main-inner">
+                <div class="main-left">
+                    <h1 class="start">Contact Us</h1>
+                    <div class="f-t-in">
+                        <div class="i-fa">
+                            <a href="#">f</a>
+                        </div>
+                        <div class="i-fa">
+                            <a href="#">t</a>
+                        </div>
+                        <div class="i-fa">
+                           <a href="#">in</a> 
+                        </div>
+                    </div>
+                    <div class="form-left">
+                        <p>or use our contact form below</p>
+                        <form action="#" id="contact-form">
+                            <input type="hidden" name="contact_number">
+                            <div class="email">
+                                <input type="text" placeholder="email" name="reply_to"/>
+                            </div>
+                            <div class="phone">
+                                <input type="text" placeholder="phone" name="phone"/>
+                            </div>
+                            <p>Type your message here:</p>
+                            <textarea name="" id="" cols="20" rows="5" name="massage" ></textarea>
+                            <p>Need additional help?</p>
+                            <button type="submit">CONTACT ME </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="main-right">
+                    <h1 class="right">Hello, User!</h1>
+                    <p class="right-p">if you want to know info about our progect than</p>
+                    <div class="btm">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="background1"></div>
+        <div class="background2"></div>
+    </div>
+</body>
+</html>
